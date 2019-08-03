@@ -1,0 +1,117 @@
+@import "../../style/colors";
+@import "../../style/helpers";
+
+#footer {
+  background-color: #140035;
+  color: #fff;
+
+  .footer-container {
+    a {
+      color: inherit;
+    }
+
+    p {
+      color: #a5b1c8;
+      font-size: 14px;
+    }
+
+    h4 {
+      margin-top: 30px;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .vizio {
+      text-align: justify;
+    }
+
+    .btn {
+      background: $purple-light;
+      color: #fff;
+      @include hover(0.2s, 0.85);
+    }
+
+    .footer-item__description {
+      p {
+        margin-bottom: 10px;
+      }
+    }
+
+    .footer-item__contact,
+    .footer-item__navigation {
+      height: 100%;
+
+      p.company {
+        color: $purple-light;
+      }
+
+      p.bordered {
+        border-bottom: 1px solid #313a4a;
+        padding-top: 9px;
+        padding-bottom: 9px;
+
+        span {
+          color: $purple-light;
+          margin-right: 15px;
+        }
+
+        .icons {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    list-style: none;
+    text-align: center;
+  }
+}
+
+@include tablet {
+  #footer {
+    .footer-container {
+      display: grid;
+      grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+      align-items: center;
+
+      .footer-item {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+}
+
+@include tablet-wide {
+  #footer {
+    .footer-container {
+      .footer-item {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+@include desktop {
+  #footer {
+    .footer-container {
+      @include center-content(1280px);
+    }
+  }
+}
+
+footer p {
+  background-color: #0a0017;
+  color: #435370;
+  text-align: center;
+  font-size: 12px;
+  padding: 12px 4px;
+  font-weight: bold;
+  min-height: 60px;
+
+  span {
+    display: block;
+  }
+}

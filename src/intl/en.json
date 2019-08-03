@@ -1,0 +1,27 @@
+{
+  "seo": {
+    "title": "Tittle",
+    "description": "Short descriptions",
+    "keywords": "Many many keywords"
+  },
+  "nav": {
+    "hero": "Home",
+    "form": "Footer"
+  },
+  "hero": {
+    "firstLine": "Primery services",
+    "secondLine": "Let’s do it together!",
+    "about": "Short description",
+    "contact": " Contact us"
+  },
+  "footer": {
+    "first": "english blablablalb.",
+    "second": "Adress, contact blablabal"
+  },
+  "backButton": "Back to Main Page",
+  "404": "Page Not Found",
+  "success": {
+    "headline": "Thank you for contacting us!",
+    "text": "We have received your message and we will contact you as soon as possible."
+  }
+}

@@ -1,0 +1,53 @@
+@mixin overlay($bg, $img, $opacity) {
+  .overlay--img {
+    background-image: url($img);
+  }
+
+  .overlay--background {
+    opacity: $opacity;
+    background-color: $bg;
+  }
+}
+
+@mixin center-content($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin hover($transition, $opacity) {
+  transition: all $transition linear;
+
+  &:hover {
+    opacity: $opacity;
+  }
+}
+
+$tablet-width: 768px;
+$tablet-wide-width: 1024px;
+$desktop-width: 1366px;
+$hd-width: 1920px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet-wide {
+  @media (min-width: #{$tablet-wide-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin hd {
+  @media (min-width: #{$hd-width}) {
+    @content;
+  }
+}

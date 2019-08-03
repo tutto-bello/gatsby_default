@@ -1,0 +1,27 @@
+{
+  "seo": {
+    "title": "Név - Fő Tevékenység",
+    "description": "Fasza leírás x karakterben",
+    "keywords": "Keresés kulcs szavak"
+  },
+  "nav": {
+    "hero": "Főoldal",
+    "footer": "Footer"
+  },
+  "hero": {
+    "firstLine": "Frappánss szavak ",
+    "secondLine": "Még frappánsabb szavak",
+    "about": "Rövid leírás: Nyomulunk",
+    "contact": " Keress minket bizalommal!"
+  },
+  "footer": {
+    "first": "blablablablablabla",
+    "second": "cím, elérhetőség blablabla"
+  },
+  "backButton": "Vissza a főoldalra",
+  "404": "A keresett oldal nem található.",
+  "success": {
+    "headline": "Köszönjük érdeklődésedet!",
+    "text": "Hamarosan keresni fogunk a megadott elérhetőségen a közös munka reményében."
+  }
+}

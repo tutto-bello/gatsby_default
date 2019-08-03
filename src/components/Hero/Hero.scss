@@ -1,0 +1,121 @@
+@import "../../style/colors";
+@import "../../style/helpers";
+
+#hero {
+  position: relative;
+  background-image: url("#");
+  background-color: black;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-size: 150%;
+  background-repeat: no-repeat;
+  padding-top: 70px;
+  background-position: center 60px;
+
+  .icons {
+    font-size: 1.5rem;
+  }
+  h1,
+  p,
+  p > a {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h1 {
+    font-size: 26px;
+    padding-top: 40px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+
+    span {
+      display: block;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+
+  p.hero--about {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: $gray-light;
+  }
+
+  p.hero--contact > a {
+    color: white;
+    padding-bottom: 35px;
+    transition: 0.1s ease-out;
+
+    &:hover {
+      color: #c680ff;
+    }
+
+    span.li_paperplane {
+      color: #c680ff;
+      margin-right: 5px;
+    }
+  }
+}
+
+@include tablet {
+  #hero {
+    padding-bottom: 70px;
+
+    h1 {
+      padding-top: 150px;
+      font-size: 36px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    p.hero--contact {
+      padding-bottom: 160px;
+      padding-top: 20px;
+
+      a {
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+@include tablet-wide {
+  #hero {
+    background-position: center top;
+    text-align: left;
+    background-size: 120%;
+    padding-left: 20px;
+
+    h1 {
+      padding-top: 190px;
+    }
+
+    p.hero--about {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      max-width: 900px;
+    }
+
+    p.hero--contact {
+      padding-bottom: 220px;
+    }
+  }
+}
+
+@include desktop {
+  #hero {
+    background-size: 100%;
+
+    .hero-container {
+      @include center-content(1280px);
+    }
+  }
+}
+
+@include hd {
+  #hero {
+    padding-top: 50px;
+  }
+}
