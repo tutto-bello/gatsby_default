@@ -57,10 +57,10 @@ const Nav = ({ intl }) => {
             </ScrollTo>
             <ScrollTo
               className="nav-item nav-link contact-link"
-              to="form"
+              to="footer"
               title={intl.formatMessage({ id: "nav.footer" })}
             >
-              <FormattedMessage id="nav.foooter" />
+              <FormattedMessage id="nav.footer" />
             </ScrollTo>
             <LanguageSwitch />
           </div>
